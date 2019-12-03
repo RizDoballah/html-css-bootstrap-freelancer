@@ -1,23 +1,52 @@
+/* Utilities */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+.margin_top_40 {
+  margin-top: 40px;
+}
+.text_allign_center {
+  text-align: center;
+}
+/* Header */
+
+/* Header_top */
 .header_top {
   height: 80px;
   background-color: #2C3E50;
   color: white;
 }
+/* Header_banner */
 .header_banner {
   height: 500px;
   background-color: #1ABC9C;
   color: white;
-  text-align: center;
 }
 .img_banner {
   width: 200px;
 }
-.main_top {
-  margin-top: 50px;
-  text-align: center;
+
+/* Main */
+/* Main_top */
+
+/* Main_middle */
+.main_middle {
+  height: 400px;
+  background-color: #1ABC9C;
+  color: white;
+}
+
+/* Main_bottom */
+/* Footer */
+.footer_top {
+  background-color: #2C3E50;
+  color: white;
+}
+.footer_bottom {
+  background-color: #1A252F;
+  color: white;
+  height: 80px;
+  line-height: 80px;
 }
