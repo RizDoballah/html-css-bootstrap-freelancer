@@ -95,6 +95,9 @@ nav {
 .img_banner {
   width: 250px;
 }
+.divider {
+  text-align: center;
+}
 .divider_star {
   font-size: 32px;
   padding: 15px;
@@ -102,9 +105,15 @@ nav {
 }
 .line {
   width: 15%;
-  border-top: 4px solid white;
+  border-top: 6px solid white;
   border-radius: 5px;
   display: inline-block;
+}
+.dark .divider_star {
+  color: black;
+}
+.dark .line {
+  border-top: 6px solid black;
 }
 
 /* Main */
@@ -152,6 +161,15 @@ nav {
   color: white;
   height: 80px;
   line-height: 80px;
+}
+.social {
+  font-size: 24px;
+  color: white;
+  background-color: #2C3E50;
+  border: 2px solid white;
+  border-radius: 35px;
+  padding: 10px;
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 768px) {
