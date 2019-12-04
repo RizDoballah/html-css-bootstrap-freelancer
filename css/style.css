@@ -4,32 +4,133 @@
   margin: 0;
   padding: 0;
 }
-.margin_top_40 {
-  margin-top: 40px;
+.margin_top_80 {
+  margin-top: 80px;
+}
+.margin_bottom_80 {
+  margin-bottom: 80px;
+}
+.margin_top_20 {
+  margin-top: 20px;
+}
+.margin_bottom_20 {
+  margin-bottom: 20px;
 }
 .text_allign_center {
   text-align: center;
+}
+.btn_blue {
+  background-color: #1ABC9C;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn_blue .glyphicon{
+  vertical-align: text-top;
+}
+.font_h1 {
+  font-size: 54px;
+  font-weight: bold;
+}
+.font_h2 {
+  font-size: 44px;
+  font-weight: bold;
+}
+.font_h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.font_p {
+  font-size: 20px;
 }
 /* Header */
 
 /* Header_top */
 .header_top {
-  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
   background-color: #2C3E50;
   color: white;
 }
+nav {
+  text-align: right;
+  line-height: 100px;
+}
+.menu {
+  text-align: right;
+}
+.menu li {
+  display: inline-block;
+  list-style: none;
+}
+.menu li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  line-height: 100px;
+
+}
+.menu li a:active,
+.menu li a:focus,
+.menu li a:hover {
+  color: #1ABC9C;
+}
+
 /* Header_banner */
 .header_banner {
-  height: 500px;
+  margin-top: 100px;
   background-color: #1ABC9C;
   color: white;
 }
 .img_banner {
-  width: 200px;
+  width: 250px;
 }
+.divider_star {
+  font-size: 32px;
+  padding: 15px;
+  vertical-align: super;
+}
+.line {
+  width: 15%;
+  border-top: 4px solid white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
 
 /* Main */
 /* Main_top */
+
+.box {
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
+}
+.pink {
+  background-color: #BA4C63;
+}
+.light_blue {
+  background-color: #1FA4B6;
+}
+.black {
+  background-color: #130F0F;
+}
+.blue {
+  background-color: #1D83C1 ;
+}
+.dark_blue {
+  background-color: #1037B5 ;
+}
+.brown {
+  background-color: #CCB2A3 ;
+}
 
 /* Main_middle */
 .main_middle {

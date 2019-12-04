@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fantawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- My style css -->
@@ -13,15 +15,22 @@
     <!-- Intestazione -->
     <header>
       <div class="header_top">
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-8">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              </div>
-              <div class="col-xs-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <h3 class="font_h3">START BOOTSTRAP</h3>
+            </div>
+            <div class="col-xs-6">
+              <nav>
+                <a href="#" class="btn btn_blue hidden-lg">Menu <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+              <ul class="menu visible-lg">
+                <li> <a href="#">PORTFOLIO</a>
+                </li>
+                <li> <a href="#">ABOUT</a>
+                </li>
+                <li> <a href="#">CONTACT</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -29,7 +38,13 @@
       <div class="header_banner container-fluid text_allign_center">
         <div class="container">
           <img class="img_banner" src="img/avataaars.svg" alt="avatar">
-          <h1>START BOOTSTRAP</h1>
+          <h1 class="font_h1">START BOOTSTRAP</h1>
+          <div class="divider">
+            <hr class="line">
+            <i class="fas fa-star divider_star"></i>
+            <hr class="line">
+          </div>
+          <p class="font_p margin_top_20 margin_bottom_80">Graphic Designer - Web Developer - Illustrator </p>
         </div>
       </div>
 
@@ -40,15 +55,15 @@
     <main>
       <!-- Main_top -->
       <div class="main_top margin_top_40 text_allign_center">
-        <h2>PORTFOLIO</h2>
+        <h2 class="font_h2">PORTFOLIO</h2>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-4">lorem</div>
-            <div class="col-xs-12 col-md-6 col-lg-4">Lorem</div>
-            <div class="col-xs-12 col-md-6 col-lg-4">Lorem</div>
-            <div class="col-xs-12 col-md-6 col-lg-4">Lorem</div>
-            <div class="col-xs-12 col-md-6 col-lg-4">Lorem</div>
-            <div class="col-xs-12 col-md-6 col-lg-4">Lorem</div>
+            <div class="col-xs-12 col-md-6 col-lg-4 box pink"></div>
+            <div class="col-xs-12 col-md-6 col-lg-4 box light_blue"></div>
+            <div class="col-xs-12 col-md-6 col-lg-4 box black"></div>
+            <div class="col-xs-12 col-md-6 col-lg-4 box blue"></div>
+            <div class="col-xs-12 col-md-6 col-lg-4 box dark_blue"></div>
+            <div class="col-xs-12 col-md-6 col-lg-4 box brown"></div>
           </div>
         </div>
       </div>
@@ -56,7 +71,7 @@
       <!-- Main_middle -->
       <div class="main_middle container-fluid margin_top_40">
         <div class="container">
-          <h2 class="text_allign_center .margin_top_40">ABOUT</h2>
+          <h2 class="text_allign_center .margin_top_40 font_h2">ABOUT</h2>
           <div class="col-xs-12 col-md-6">
             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
           </div>
@@ -68,7 +83,7 @@
       <!-- /Main_middle -->
       <!-- Main_bottom -->
       <div class="main_bottom container-fluid margin_top_40">
-        <h2 class="text_allign_center">CONTACT ME</h2>
+        <h2 class="text_allign_center font_h2">CONTACT ME</h2>
         <form>
           <div class="form-group">
             <label for="exampleInputName">Name</label>
@@ -98,14 +113,14 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-4">
-            <h3>LOCATION</h3>
+            <h3 class="font_h3">LOCATION</h3>
             <p>2215 John Daniel Drive Clark, MO 65243</p>
           </div>
           <div class="col-xs-12 col-md-4">
-            <h3>AROUND THE WEB</h3>
+            <h3 class="font_h3">AROUND THE WEB</h3>
           </div>
           <div class="col-xs-12 col-md-4">
-            <h3>ABOUT FREELANCER</h3>
+            <h3 class="font_h3">ABOUT FREELANCER</h3>
             <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap.</p>
           </div>
           </div>
