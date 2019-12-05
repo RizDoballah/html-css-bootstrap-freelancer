@@ -4,6 +4,12 @@
   margin: 0;
   padding: 0;
 }
+.padding_bottom_80 {
+  padding-bottom: 80px;
+}
+.padding_top_80 {
+  padding-top: 80px;
+}
 .margin_top_80 {
   margin-top: 80px;
 }
@@ -19,17 +25,31 @@
 .margin_bottom_40 {
   margin-bottom: 40px;
 }
-.text_allign_center {
-  text-align: center;
-}
 .btn_blue {
   background-color: #1ABC9C;
   color: white;
   font-size: 16px;
   font-weight: bold;
 }
+.btn_download {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  margin-top: 80px;
+  margin-left: -150px;
+}
+.btn_padding {
+  padding: 20px;
+  border-radius: 10px;
+}
 .btn_blue .glyphicon{
   vertical-align: text-top;
+}
+.font_color_white {
+  color: white;
+}
+.font_color_dark {
+  color: #2C3E50 ;
 }
 .font_h1 {
   font-size: 54px;
@@ -42,14 +62,14 @@
 .font_h3 {
   font-size: 24px;
   font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 .font_p {
   font-size: 20px;
 }
-/* Header */
 
+/* Header */
 /* Header_top */
 .header_top {
   position: fixed;
@@ -78,14 +98,17 @@ nav {
   font-weight: bold;
   padding: 15px;
   line-height: 80px;
-
 }
-.menu li a:active,
 .menu li a:focus,
 .menu li a:hover {
   color: #1ABC9C;
+  text-decoration: none;
 }
-
+.menu li a:active {
+  background-color:#1ABC9C;
+  color: white;
+  border-radius: 5px;
+}
 /* Header_banner */
 .header_banner {
   margin-top: 80px;
@@ -109,23 +132,38 @@ nav {
   border-radius: 5px;
   display: inline-block;
 }
-.dark .divider_star {
-  color: black;
-}
-.dark .line {
-  border-top: 6px solid black;
+.font_color_dark .line {
+  border-top: 6px solid #2C3E50 ;
 }
 
 /* Main */
 /* Portofolio */
 .box_portfolio {
-  width: 100%;
-  height: 250px;
+  position: relative;
   margin-bottom: 30px;
-  border-radius: 10px;
 }
 .pink {
   background-color: #BA4C63;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(26,188,156,0.6);
+  border-radius: 15px;
+  opacity: 0;
+}
+.overlay span {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+}
+.box_portfolio:hover .overlay {
+  opacity: 1;
 }
 .light_blue {
   background-color: #1FA4B6;
@@ -142,45 +180,104 @@ nav {
 .brown {
   background-color: #CCB2A3 ;
 }
-
+.box_portfolio img {
+  width: 100%;
+  border-radius: 15px;
+}
 /* About */
 .about {
-  height: 400px;
   background-color: #1ABC9C;
-  color: white;
+}
+.about span {
+  padding: 0 8px;
 }
 
-/* Main_bottom */
 /* Footer */
 .footer_top {
   background-color: #2C3E50;
-  color: white;
 }
 .footer_bottom {
   background-color: #1A252F;
-  color: white;
   height: 80px;
   line-height: 80px;
 }
+.social_media li {
+  list-style: none;
+  display: inline-block;
+  margin-top: -70px;
+}
+.social_media li :hover {
+  background-color: white;
+}
+.social_media a :hover {
+  color: #2C3E50;
+}
 .social {
+  padding: 10px;
+  margin-left: 8px;
   font-size: 24px;
   color: white;
   background-color: #2C3E50;
   border: 2px solid white;
   border-radius: 35px;
-  padding: 10px;
-  margin-left: 8px;
 }
 
-@media screen and (max-width: 768px) {
-  .wrapper_xs_100 {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) {
+/* Media Queries */
+@media screen and (min-width: 992px) {
   .wrapper_md_60 {
     width: 60%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .wrapper_sm_85 {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .btn_download {
+    margin-top: 40px;
+    margin-left: 200px;
+  }
+  .footer_top h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .footer_top p {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper_xs_95 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .header_top h3 {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .font_h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .font_h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .font_h3 {
+    font-size: 20px;
+  }
+  .line {
+    width: 30%;
+  }
+  .btn_download {
+    margin-top: 40px;
+    margin-left: 70px;
+  }
+  .footer_top h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .footer_top p {
+    margin-top: 0;
   }
 }
